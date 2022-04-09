@@ -19,9 +19,13 @@ newQuote = new Quote('','',0,0);
 create(){
 }
 @Output() addQuote = new EventEmitter<Quote>()
-submitQuote(){
+ submitQuote(){
   this.addQuote.emit(this.newQuote);
     }
+
+
+
+
   constructor() { }
 
   ngOnInit(): void {
