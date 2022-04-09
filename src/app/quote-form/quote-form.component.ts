@@ -7,10 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  quotes:Quote[]=[
-    new Quote{'lorem','mary', 0, 0},
-    new Quote{'lorem','sandy',0,0}
-  ]
+  
 
   constructor() { }
 
