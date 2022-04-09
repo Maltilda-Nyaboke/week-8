@@ -8,11 +8,7 @@ import { Quote } from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // quotes:Quote[]=[
-  //   {quote:'lorem ipsum',author:'Mary'},
-  //   {quote:'loem ipsum',author:'John'},
-  //   {quote:'lorem ipum',author:'Grace'},
-  //   {quote:'lorm ipsum',author:'Peter'},
-  //   {quote:'lore ipsu',author:'Doe'}
-  // ]
+  quotes:Quote[]=[
+  
+  ]
 }
