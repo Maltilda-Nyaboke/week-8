@@ -7,7 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-newQuote = new Quote('lorem','',0,0);
+newQuote = new Quote('','',0,0);
 
   author ="";
   quotes:Quote[]=[
@@ -16,14 +16,12 @@ newQuote = new Quote('lorem','',0,0);
     new Quote('fourth','john',0,0),
     new Quote('five','mary', 0, 0)
   ]
-  newQ="";
 create(){
- this.newQ = "nothing";
 }
-// @Output() addQuote = new EventEmitter<Quote>()
-// submitQuote(){
-//   this.addQuote.emit(this.quote);
-//     }
+@Output() addQuote = new EventEmitter<Quote>()
+submitQuote(){
+  this.addQuote.emit(this.newQuote);
+    }
   constructor() { }
 
   ngOnInit(): void {

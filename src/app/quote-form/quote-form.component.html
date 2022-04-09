@@ -3,35 +3,38 @@
   <div class="row p-5">
     <div class="col-md-4"><h2 class="text-center">Add new quote</h2>
       <br>
-      <form #quoteForm ="ngForm">
+      <form (ngSubmit)="submitQuote()" #quoteForm ="ngForm">
          
           <div class="form-group">
     
               <label for="quote">Quote</label>
-              <textarea class="form-control" id="description" rows="4" required></textarea>
+              <textarea class="form-control" id="quote"[(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" rows="4" required></textarea>
+              <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                <p>Quote is required</p>
+    
+          </div>
     
           </div>
           <div class="form-group">
     
             <label for="author">Author</label>
-            <input type="text" required class="form-control" id="author"[(ngModel)]="newQuote.author" name="author" #quote='ngModel' required>
-            <p>My name is {{newQuote.author}}</p>
+            <input type="text" required class="form-control" id="author"[(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
         </div>
         <div class="form-group">
     
           <label for="owner">Owner</label>
           <input type="text" required class="form-control" id="quote">
-    
       </div>
+      <button (click)="create()" class="btn btn-outline-success">Create</button>
       </form>
     
-    <button (click)="create()" class="btn btn-outline-success">Create</button>
+    
     
     </div>
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <ul *ngFor="let quote of quotes">
-        <li appQuoteHighlight>{{quote.quote}} <span>{{quote.author}}</span><span class="text-success ">upvotes: {{quote.upvotes}}</span> <span class="text-danger ml-3" > downvotes: {{quote.downvotes}}</span></li>
+        <li appQuoteHighlight>{{quote.quote}} <span>{{quote.author}}</span>  <span class="text-success "> upvotes: {{quote.upvotes}}</span>   <span class="text-danger ml-3" > downvotes: {{quote.downvotes}}</span></li>
       </ul>
     </div>
   
