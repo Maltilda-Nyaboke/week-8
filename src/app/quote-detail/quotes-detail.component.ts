@@ -8,8 +8,8 @@ import { Quote } from '../quote';
 })
 export class QuotesDetailComponent implements OnInit {
   quotes:Quote[]=[
-    new Quote{'lorem','mary', 0, 0},
-    new Quote{'lorem','sandy',0,0}
+    new Quote('lorem','mary', 0, 0),
+    new Quote('lorem','sandy',0,0)
   ]
 
   constructor() { }
