@@ -1,4 +1,9 @@
+
+
+
+
 export class Quote {
+  showDescription:boolean;
     quote: string;
     author:string;
     upvotes:number;
@@ -7,7 +12,8 @@ export class Quote {
       this.quote = quote;
       this.author =author;
       this.upvotes = upvotes;
-      this.downvotes = downvotes;  
+      this.downvotes = downvotes;
+      this.showDescription = false;  
     }
 
 }
