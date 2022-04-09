@@ -12,7 +12,9 @@ export class QuoteFormComponent implements OnInit {
     new Quote('lorem','sandy',0,0),
     new Quote('lorem','mary', 0, 0)
   ]
+create(i){
 
+}
   constructor() { }
 
   ngOnInit(): void {
