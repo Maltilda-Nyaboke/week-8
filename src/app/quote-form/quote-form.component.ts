@@ -7,13 +7,18 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
+newQuote = new Quote('lorem','',0,0);
+
   author ="";
   quotes:Quote[]=[
     new Quote('lorem','sandy',0,0),
-    new Quote('lorem','mary', 0, 0)
+    new Quote('lorem','mary', 0, 0),
+    new Quote('fourth','john',0,0),
+    new Quote('five','mary', 0, 0)
   ]
-create(i){
-
+  newQ="";
+create(){
+ this.newQ = "nothing";
 }
 // @Output() addQuote = new EventEmitter<Quote>()
 // submitQuote(){

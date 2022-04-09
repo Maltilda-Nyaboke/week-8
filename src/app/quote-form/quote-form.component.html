@@ -14,8 +14,8 @@
           <div class="form-group">
     
             <label for="author">Author</label>
-            <input type="text" required class="form-control" id="quote">
-    
+            <input type="text" required class="form-control" id="author"[(ngModel)]="newQuote.author" name="author" #quote='ngModel' required>
+            <p>My name is {{newQuote.author}}</p>
         </div>
         <div class="form-group">
     
@@ -25,12 +25,13 @@
       </div>
       </form>
     
-    <button class="btn btn-success">Create</button>
+    <button (click)="create()" class="btn btn-outline-success">Create</button>
+    
     </div>
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <ul *ngFor="let quote of quotes">
-        <li appQuoteHighlight>{{quote.quote}} <span class="text-success ">upvotes: {{quote.upvotes}}</span> <span class="text-danger ml-3" > downvotes: {{quote.downvotes}}</span></li>
+        <li appQuoteHighlight>{{quote.quote}} <span>{{quote.author}}</span><span class="text-success ">upvotes: {{quote.upvotes}}</span> <span class="text-danger ml-3" > downvotes: {{quote.downvotes}}</span></li>
       </ul>
     </div>
   
