@@ -33,7 +33,7 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <ul *ngFor="let quote of quotes">
-        <li appQuoteHighlight>{{quote.quote}}  <span>{{quote.author}}</span>   <span>{{quote.owner}}</span>  <span class="text-success "> <button (click)="addVote()" class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{upvotes}}</span>   <span class="text-danger ml-3" ><button (click)="subVote()" class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{downvotes}}</span> </li>
+        <li appQuoteHighlight>{{quote.quote}}  <span>{{quote.author}}</span>   <span>{{quote.owner}}</span>  <span class="text-success "> <button (click)="addVote()" class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{upvotes}}</span>   <span class="text-danger ml-3" ><button (click)="subVote()" class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{downvotes}}</span> <span>{{newQuote.postDate}}</span></li>
       </ul>
       <ul *ngIf="let upvote in upvotes">
         <li></li>
