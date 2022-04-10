@@ -4,7 +4,7 @@
      <div class="c0l-md-2"></div>
     <div class="col-md-8 d-flex justify-content-center">
       <ul *ngFor="let quote of quotes; let i = index">
-        <li appQuoteHighlight>{{quote.quote}}  <span>{{quote.author}}</span>   <span>{{quote.owner}}</span>  <span class="text-success "> <button (click)="addVote()" class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{upvotes}}</span>   <span class="text-danger ml-3" ><button (click)="subVote()" class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{downvotes}}</span> <span>{{newQuote.postDate|date}}</span></li>
+        <li appQuoteHighlight>{{quote.quote}}  <span>{{quote.author}}</span>   <span>{{quote.owner}}</span>  <span class="text-success "> <button (click)='quote.addVote()' class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{quote.upvotes}}</span>   <span class="text-danger ml-3" ><button (click)='quote.subVote()' class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{quote.downvotes}}</span> <span>{{newQuote.postDate|date}}</span></li>
       </ul>
     </div>
     <div class="col-md-2"></div>
