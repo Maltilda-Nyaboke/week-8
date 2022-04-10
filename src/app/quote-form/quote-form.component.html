@@ -1,7 +1,7 @@
 
 <div class="container">
   <div class="row p-5">
-    <div class="col-md-4"><h2 class="text-center">Add new quote</h2>
+    <div class="form col-md-4"><h2 class="text-center">Add new quote</h2>
       <br>
       <form (ngSubmit)="submitQuote()" #quoteForm ="ngForm">
          
@@ -18,14 +18,14 @@
           <div class="form-group">
     
             <label for="author">Author</label>
-            <input type="text" required class="form-control" id="author"[(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
+            <input type="text" required class="form-control" id="author"[(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
         </div>
         <div class="form-group">
     
           <label for="owner">Owner</label>
           <input type="text" required class="form-control" id="quote">
       </div>
-      <button (click)="create()" class="btn btn-outline-success">Create</button>
+      <button (click)="create()" class="btn btn-success mt-5">Create</button>
       </form>
     
     
@@ -33,7 +33,7 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <ul *ngFor="let quote of quotes">
-        <li appQuoteHighlight>{{quote.quote}} <span>{{quote.author}}</span>  <span class="text-success "> <button class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{quote.upvotes}}</span>   <span class="text-danger ml-3" ><button class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{quote.downvotes}}</span></li>
+        <li appQuoteHighlight>{{quote.quote}} <span>{{quote.author}}</span>  <span class="text-success "> <button (click)="addVote()" class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{quote.upvotes}}</span>   <span class="text-danger ml-3" ><button class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{quote.downvotes}}</span></li>
       </ul>
     </div>
   

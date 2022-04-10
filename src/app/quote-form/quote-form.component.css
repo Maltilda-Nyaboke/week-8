@@ -1,3 +1,17 @@
 .fa-plus{
     font-size: 50px;
 }
+h2{
+    color:#3cdfff ;
+}
+label{
+    color: #3cdfff;
+}
+.form{
+    border: 2px solid #3cdfff;
+}
+.btn-success{
+    background-color: #3cdfff;
+    color: white;
+    outline: none;
+}

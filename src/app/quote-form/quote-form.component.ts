@@ -7,6 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
+  [x: string]: any;
 newQuote = new Quote('','',0 , 0);
 
   author ="";
@@ -24,8 +25,8 @@ create(){
  submitQuote(){
   this.addQuote.emit(this.newQuote);
     }
-
-
+    addVote(){
+    }
 
   constructor() { }
 
