@@ -7,7 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-newQuote = new Quote('','',0,0);
+newQuote = new Quote('','',0 , 0);
 
   author ="";
   quotes:Quote[]=[
@@ -17,12 +17,13 @@ newQuote = new Quote('','',0,0);
     new Quote('five','mary', 0, 0)
   ]
 create(){
+  let quoteLength = this.quotes.length;
+  this.quotes.push(this.newQuote)
 }
 @Output() addQuote = new EventEmitter<Quote>()
  submitQuote(){
   this.addQuote.emit(this.newQuote);
     }
-
 
 
 

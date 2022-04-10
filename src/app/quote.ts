@@ -8,6 +8,7 @@ export class Quote {
     author:string;
     upvotes:number;
     downvotes:number;
+  static upvotes: any;
     constructor(quote: string,author:string,upvotes:number,downvotes:number){
       this.quote = quote;
       this.author =author;
