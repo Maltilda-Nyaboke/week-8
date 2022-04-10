@@ -15,3 +15,9 @@ label{
     color: white;
     outline: none;
 }
+li{
+    padding: 10px;
+}
+span{
+    padding: 10px;
+}
