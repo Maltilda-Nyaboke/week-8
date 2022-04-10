@@ -15,8 +15,12 @@ label{
     color: white;
     outline: none;
 }
+ul{
+    border: 2px dashed deeppink;
+}
 li{
     padding: 10px;
+    list-style: none;
 }
 span{
     padding: 10px;
