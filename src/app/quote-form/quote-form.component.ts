@@ -25,8 +25,15 @@ create(){
  submitQuote(){
   this.addQuote.emit(this.newQuote);
     }
+    upvotesAnddownvotes:number = 0;
     addVote(){
+    this.upvotesAnddownvotes++
     }
+    subVote(){
+      this.upvotesAnddownvotes--;
+    }
+
+
 
   constructor() { }
 
