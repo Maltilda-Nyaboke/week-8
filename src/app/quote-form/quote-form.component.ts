@@ -25,12 +25,13 @@ create(){
  submitQuote(){
   this.addQuote.emit(this.newQuote);
     }
-    upvotesAnddownvotes:number = 0;
+    upvotes:number = 0;
+    downvotes:number = 0;
     addVote(){
-    this.upvotesAnddownvotes++
+    this.upvotes++
     }
     subVote(){
-      this.upvotesAnddownvotes--;
+      this.downvotes++;
     }
 
 
