@@ -23,7 +23,7 @@
         <div class="form-group">
     
           <label for="owner">Owner</label>
-          <input type="text" required class="form-control" id="quote">
+          <input type="text" required class="form-control" id="owner"[(ngModel)]="newQuote.owner" name="owner" #owner="ngModel" required>
       </div>
       <button (click)="create()" class="btn btn-success mt-5">Create</button>
       </form>
@@ -33,7 +33,7 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <ul *ngFor="let quote of quotes">
-        <li appQuoteHighlight>{{quote.quote}} <span>{{quote.author}}</span>  <span class="text-success "> <button (click)="addVote()" class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{quote.upvotes}}</span>   <span class="text-danger ml-3" ><button class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{quote.downvotes}}</span></li>
+        <li appQuoteHighlight>{{quote.quote}} <span>{{quote.author}}</span> <span>{{quote.owner}}</span>  <span class="text-success "> <button (click)="addVote()" class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{quote.upvotes}}</span>   <span class="text-danger ml-3" ><button class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{quote.downvotes}}</span></li>
       </ul>
     </div>
   

@@ -8,14 +8,14 @@ import { Quote } from '../quote';
 })
 export class QuoteFormComponent implements OnInit {
   [x: string]: any;
-newQuote = new Quote('','',0 , 0);
+newQuote = new Quote('','','', 0 , 0);
 
   author ="";
   quotes:Quote[]=[
-    new Quote('lorem','sandy',0,0),
-    new Quote('lorem','mary', 0, 0),
-    new Quote('fourth','john',0,0),
-    new Quote('five','mary', 0, 0)
+    new Quote('lorem','sandy','tilda', 0, 0),
+    new Quote('lorem','mary','tilda', 0, 0),
+    new Quote('fourth','john','tilda', 0,0),
+    new Quote('five','mary','tilda', 0, 0)
   ]
 create(){
   let quoteLength = this.quotes.length;
