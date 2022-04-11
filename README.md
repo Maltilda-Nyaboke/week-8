@@ -1,6 +1,6 @@
 # Quotes
-#### Quotes, March 25th 2019
-#### By **Peter Wachira**
+#### Quotes Application
+#### By **Maltilda Nyaboke**
 
 ## Description
 - An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
