@@ -45,7 +45,8 @@ deleteQuote(isRead: any, index: any) {
     // subVote(){
     //   this.downvotes++;
     // }
-   
+    array: number[]=this.quotes.map(quote=> quote.upvotes)
+    public highest=Math.max(...this.array)
 
   constructor() { }
 

@@ -10,6 +10,15 @@
           <div class="del">
             <app-quote-detail [quote]="quote" (isComplete)='deleteQuote($event,1)'></app-quote-detail>
           </div>
+          <div *ngIf="quote.upvotes == highest && quote.upvotes > 0; then highlight else unhighlight">
+          </div>
+          <ng-template #highlight>
+              <p appHighlight> <strong id="author"></strong></p>
+          </ng-template>
+
+          <ng-template #unhighlight>
+              <p id="author"></p>
+          </ng-template>
         </li>
       </ul>
       

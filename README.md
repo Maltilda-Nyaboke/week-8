@@ -1,27 +1,34 @@
 # Quotes
+#### Quotes, March 25th 2019
+#### By **Peter Wachira**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+## Description
+- An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
 
-## Development server
+## Behaviour Driven Development(BDD)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+| Input                        | Ouput                                                                                            |
+|--------------------------    |----------------------------------------------------------------------------------------------    |
+| User clicks Post  Quote     | Quote form displays with input fields for Author, Publisher                  |
+| User Clicks Delete           | The quote is purged from view             |
+| User clicks Upvote        |   upvote is incremented value by   1 on each click      |
+| User clicks Downvote     | downvote is decremented value by 1 on each click     |
 
-## Code scaffolding
+## Setup/Installation requirements
+- Clone  or download and unzip the repository from github, [https://github.com/Maltilda-Nyaboke/Quotes-/](https://github.com/Maltilda-Nyaboke/Quotes-.git).
+- If you have git Use this command `git clone *` to clone the project.
+- Run ng serve from your terminal
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Live Demo
+To view the page click on the link below
+* [https://Maltilda-Nyaboke.github.io/Week-8-/](*)
 
-## Build
+## Technologies Used
+- Angular CLI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Known Bugs
+- The page doesn't highlight the quote with the highest votes.
+- The page doesn't show the exact date of the posted quote.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Support and Contact Details
+- For any comments,suggestions,feedback or inquiries, contact me via email: `maltilda.bosibori.student@moringaschool.com`
