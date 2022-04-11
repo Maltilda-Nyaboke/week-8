@@ -4,6 +4,11 @@
 h2{
     color:#3cdfff ;
 }
+h3{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
 label{
     color: #3cdfff;
 }
@@ -16,10 +21,10 @@ label{
     outline: none;
 }
 ul{
-    border: 2px double #3cdfff;
+    border: 2px inset #3cdfff;
     margin: 10px;
     align-items: center;
-    height: 300px;
+    height: 350px;
     width: 800px;
     color: white;
 }
@@ -36,4 +41,10 @@ li{
 .del{
     float: right;
     margin-top: 30px;
+}
+.up{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
 }
