@@ -5,7 +5,7 @@ h2{
     color:#3cdfff ;
 }
 h3{
-    color: white;
+    color: #3cdfff;
     text-align: center;
     margin-top: 10px;
 }
@@ -47,4 +47,10 @@ li{
     flex-direction: row;
     justify-content: space-evenly;
     margin: 20px;
+}
+p{
+    margin: 10px;
+}
+.owner{
+    padding: 0;
 }
