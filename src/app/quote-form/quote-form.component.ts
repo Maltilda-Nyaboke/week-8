@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { QuoteDetailComponent } from '../quote-detail/quote-detail.component';
 import { Quote } from '../quote';
 
 @Component({
@@ -7,8 +8,10 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
+  [x: string]: any;
   
-  // @Input() quote: Quote;
+  @Input() quote: Quote;
+  
   @Output() addQuote = new EventEmitter<Quote>()
    submitQuote(){
     this.addQuote.emit(this.newQuote);
@@ -28,15 +31,21 @@ create(){
   this.quotes.push(this.newQuote)
 }
 
-
+deleteQuote(isRead: any, index: any) {
+  if (isRead) {
+    let toDelete = confirm(`Are you sure you want to delete this Quote?`);
+    if (toDelete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+}
     // addVote(){
     // this.upvotes++;
     // }
     // subVote(){
     //   this.downvotes++;
     // }
-
-
+   
 
   constructor() { }
 

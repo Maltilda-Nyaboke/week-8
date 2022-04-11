@@ -7,6 +7,7 @@ import { QuoteHighlightDirective } from './quote-highlight.directive';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { PostPipe } from './post.pipe';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { PostPipe } from './post.pipe';
     QuoteHighlightDirective,
     QuoteFormComponent,
     PostPipe,
+    QuoteDetailComponent,
   ],
   imports: [
     BrowserModule,

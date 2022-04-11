@@ -11,6 +11,7 @@ export class Quote {
     downvotes:number;
     postDate:Date;
   static upvotes: any;
+  splice: any;
     constructor(quote: string,author:string,owner:string,upvotes:number= 0,downvotes:number= 0,postDate:Date){
       this.quote = quote;
       this.author =author;
@@ -26,5 +27,6 @@ export class Quote {
       subVote(){
         this.downvotes++;
       }
+      
 }
 
