@@ -1,10 +1,12 @@
 
 <div class="container-fluid">
   <div class="row p-5">
+    <h2 class="title text-center">Be Inspired to inspire others</h2>
      <!-- <div class="c0l-md-2"></div> -->
-    <div class="rec d-flex justify-content-center">
+    <div class="rec d-flex justify-content-center text-right">
+      
       <ul *ngFor="let quote of quotes; let i = index">
-        <li appQuoteHighlight>{{quote.quote}}<br><span>{{quote.author}}</span> <br> <span>Posted by {{quote.owner}}</span> <br> <span class="text-success "> <button (click)='quote.addVote()' class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{quote.upvotes}}</span>   <span class="text-danger ml-3" ><button (click)='quote.subVote()' class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{quote.downvotes}}</span> <br> <span>Posted on {{newQuote.postDate|date}}</span>
+        <li appQuoteHighlight>{{quote.quote}}<br><span>{{quote.author}}</span> <br> <br> <span class="owner">Posted by {{quote.owner}}</span> <br> <span class="text-success "> <button (click)='quote.addVote()' class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button>{{quote.upvotes}}</span>   <span class="text-danger ml-3" ><button (click)='quote.subVote()' class="btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button>{{quote.downvotes}}</span> <br> <span>Posted on {{newQuote.postDate|date}}</span>
           <div class="del">
             <app-quote-detail [quote]="quote" (isComplete)='deleteQuote($event,1)'></app-quote-detail>
           </div>

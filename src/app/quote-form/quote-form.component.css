@@ -21,14 +21,14 @@ ul{
     align-items: center;
     height: 300px;
     width: 800px;
+    color: white;
 }
 li{
-    padding: 10px;
     list-style: none;
-}
-span{
+    color: white;
     padding: 10px;
 }
+
 .rec{
     /* background-color: deeppink; */
     margin-left: 20px;
