@@ -7,7 +7,7 @@ h2{
 h3{
     color: #3cdfff;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 label{
     color: #3cdfff;
@@ -24,7 +24,7 @@ ul{
     border: 2px inset #3cdfff;
     margin: 10px;
     align-items: center;
-    height: 350px;
+    height: 400px;
     width: 800px;
     color: white;
 }
@@ -46,7 +46,7 @@ li{
     display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 20px;
+    margin: 10px;
 }
 p{
     margin: 10px;

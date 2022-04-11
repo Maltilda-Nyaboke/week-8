@@ -6,7 +6,7 @@
     <div class="rec d-flex justify-content-center text-right mt-5">
       
       <ul *ngFor="let quote of quotes; let i = index">
-        <li appQuoteHighlight>{{quote.quote}}<br><span><h3>{{quote.author}}</h3></span> <br> <br> <span class="owner">Posted by: {{quote.owner}} </span> <br> <span class=" up text-success "> <button (click)='quote.addVote()' class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button> <p>{{quote.upvotes}}</p></span> <span class=" up text-danger ml-3" ><button (click)='quote.subVote()' class=" btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button><p>{{quote.downvotes}}</p></span> <br> <span>Posted on {{newQuote.postDate|date}}</span>
+        <li appQuoteHighlight><p>{{quote.quote}}</p><br><span><h3>{{quote.author}}</h3></span> <br> <br> <span class="owner">Posted by:<h6>{{quote.owner}}</h6> </span> <br> <span class=" up text-success "> <button (click)='quote.addVote()' class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button> <p>{{quote.upvotes}}</p></span> <span class=" up text-danger ml-3" ><button (click)='quote.subVote()' class=" btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button><p>{{quote.downvotes}}</p></span> <br> <span>Posted on {{newQuote.postDate|date}}</span>
           <div class="del">
             <app-quote-detail [quote]="quote" (isComplete)='deleteQuote($event,1)'></app-quote-detail>
           </div>
@@ -18,7 +18,7 @@
   
 </div>
 <div class="row p-5">
-  <div class="form col-md-6"><h2 class="text-center">Add new quote</h2>
+  <div class="form col-md-4 "><h2 class="text-center">Add new quote</h2>
     <br>
     <form (ngSubmit)="submitQuote()" #quoteForm ="ngForm">
        

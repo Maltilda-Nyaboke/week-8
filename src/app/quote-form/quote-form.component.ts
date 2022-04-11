@@ -21,10 +21,10 @@ newQuote = new Quote('','','', 0 , 0,new Date( ));
 
   author ="";
   quotes:Quote[]=[
-    new Quote('“When you have a dream, you’ve got to grab it and never let go.”','Carol Burnett','tilda', 0, 0,new Date(12,3,2020)),
-    new Quote('“Nothing is impossible. The word itself says ‘I’m possible!”','Audrey Hepburn','tilda', 0, 0,new Date(12,3,2020)),
-    new Quote('“You define your own life. Don’t let other people write your script.”','Oprah Winfrey','tilda', 0,0,new Date(12,3,2020)),
-    new Quote('“Spread love everywhere you go.”','Mother Teresa','tilda', 0, 0,new Date(12,3,2020))
+    new Quote('“When you have a dream, you’ve got to grab it and never let go.”','Carol Burnett','Maltilda Nyaboke', 0, 0,new Date(12,3,2020)),
+    new Quote('“Nothing is impossible. The word itself says ‘I’m possible!”','Audrey Hepburn','Maltilda Nyaboke', 0, 0,new Date(12,3,2020)),
+    new Quote('“You define your own life. Don’t let other people write your script.”','Oprah Winfrey','Maltilda Nyaboke', 0,0,new Date(12,3,2020)),
+    new Quote('“Spread love everywhere you go.”','Mother Teresa','Maltilda Nyaboke', 0, 0,new Date(12,3,2020))
   ]
 create(){
   let quoteLength = this.quotes.length;
