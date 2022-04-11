@@ -25,7 +25,7 @@ ul{
     margin: 10px;
     align-items: center;
     height: 400px;
-    width: 1000px;
+    width: 500px;
     color: white;
 }
 li{
@@ -38,6 +38,7 @@ li{
 .del{
     float: right;
     margin-top: 10px;
+    margin-right: 10px;
 }
 .up{
     display: inline-flex;

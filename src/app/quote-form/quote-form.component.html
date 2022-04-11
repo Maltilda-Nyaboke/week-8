@@ -3,7 +3,7 @@
   <div class="row p-5">
     <h2 class="title text-center ">Be Inspired to inspire others</h2>
      <!-- <div class="c0l-md-2"></div> -->
-    <div class="rec d-flex justify-content-center text-right mt-5">
+    <div class=" d-flex justify-content-center text-right mt-5">
       
       <ul *ngFor="let quote of quotes; let i = index">
         <li appQuoteHighlight><p>{{quote.quote}}</p><br><span><h3>{{quote.author}}</h3></span> <br> <br> <span class="owner">Posted by:<h6>{{quote.owner}}</h6> </span> <br> <span class=" up text-success "> <button (click)='quote.addVote()' class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button> <p>{{quote.upvotes}}</p></span> <span class=" up text-danger ml-3" ><button (click)='quote.subVote()' class=" btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button><p>{{quote.downvotes}}</p></span> <br> <span>Posted on {{quote.postDate|date}}</span>
