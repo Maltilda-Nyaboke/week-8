@@ -16,7 +16,11 @@ label{
     outline: none;
 }
 ul{
-    border: 2px dashed deeppink;
+    border: 2px double #3cdfff;
+    margin: 10px;
+    align-items: center;
+    height: 300px;
+    width: 800px;
 }
 li{
     padding: 10px;
@@ -28,4 +32,8 @@ span{
 .rec{
     /* background-color: deeppink; */
     margin-left: 20px;
+}
+.del{
+    float: right;
+    margin-top: 30px;
 }
