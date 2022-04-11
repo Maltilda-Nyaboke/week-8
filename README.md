@@ -15,7 +15,7 @@
 | User clicks Downvote     | downvote is decremented value by 1 on each click     |
 
 ## Setup/Installation requirements
-- Clone  or download and unzip the repository from github, [https://github.com/Maltilda-Nyaboke/Quotes-/](https://github.com/Maltilda-Nyaboke/Quotes-.git).
+- Clone  or download and unzip the repository from github, [https://github.com/Maltilda-Nyaboke/week-8-/](https://github.com/Maltilda-Nyaboke/week-8-.git).
 - If you have git Use this command `git clone *` to clone the project.
 - Run ng serve from your terminal
 
