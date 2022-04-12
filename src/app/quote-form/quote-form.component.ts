@@ -25,7 +25,7 @@ newQuote = new Quote('','','', 0 , 0,new Date( ));
     new Quote('“When you have a dream, you’ve got to grab it and never let go.”','Carol Burnett','Maltilda Nyaboke', 0, 0,new Date(2006,13,2020)),
     new Quote('“Nothing is impossible. The word itself says ‘I’m possible!”','Audrey Hepburn','Maltilda Nyaboke', 0, 0,new Date(2007,6,2020)),
     new Quote('“You define your own life. Don’t let other people write your script.”','Oprah Winfrey','Maltilda Nyaboke', 0,0,new Date(2012,3,2030)),
-    new Quote('“Spread love everywhere you go.”','Mother Teresa','Maltilda Nyaboke', 0, 0,new Date(2013,3,2020))
+    new Quote('“Keep your face always toward the sunshine, and shadows will fall behind you."','Mother Teresa','Maltilda Nyaboke', 0, 0,new Date(2013,3,2020))
   ]
 create(quote){
   let quo= quote.quote;

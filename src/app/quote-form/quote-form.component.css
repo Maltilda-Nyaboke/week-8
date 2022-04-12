@@ -20,24 +20,13 @@ label{
     color: white;
     outline: none;
 }
-ul{
+
+.card{
     border: 2px inset #3cdfff;
-    margin: 10px;
-    align-items: center;
-    height: 400px;
-    width: 500px;
-    color: white;
 }
-li{
-    list-style: none;
-    color: white;
-    /* padding: 10px; */
-}
-
-
 .del{
     float: right;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-right: 10px;
 }
 .up{
@@ -48,7 +37,9 @@ li{
 }
 p{
     margin: 10px;
+    color: antiquewhite;
 }
 .owner{
     padding: 0;
+    color: azure;
 }

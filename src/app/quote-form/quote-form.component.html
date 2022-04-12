@@ -3,14 +3,21 @@
   <div class="row p-5">
     <h2 class="title text-center ">Be Inspired to inspire others</h2>
      <!-- <div class="c0l-md-2"></div> -->
-    <div class=" d-flex justify-content-center text-right mt-5">
+    <div class="col-lg-12 d-flex">
       
-      <ul *ngFor="let quote of quotes; let i = index">
-        <li appQuoteHighlight><p>{{quote.quote}}</p><br><span><h3>{{quote.author}}</h3></span> <br> <br> <span class="owner">Posted by:<h6>{{quote.owner}}</h6> </span> <br> <span class=" up text-success "> <button (click)='quote.addVote()' class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button> <p>{{quote.upvotes}}</p></span> <span class=" up text-danger ml-3" ><button (click)='quote.subVote()' class=" btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button><p>{{quote.downvotes}}</p></span> <br> <span>Posted on {{quote.postDate|date}}</span>
+      <div class="card bg-transparent m-3 w-25" *ngFor="let quote of quotes; let i = index">
+        <div class="card-body">
+          <p>{{quote.quote}}</p><span><h3>{{quote.author}}</h3></span><br>
+         <span class="owner">Posted by : {{quote.owner}}</span> <br> <br>
+         <span class=" up text-success "> <button (click)='quote.addVote()' class="btn btn-success"><i class="fa-solid fa-thumbs-up"></i></button> <p>{{quote.upvotes}}</p></span> 
+         <span class=" up text-danger ml-3" ><button (click)='quote.subVote()' class=" btn btn-danger"><i class="fa-solid fa-thumbs-down"></i></button><p>{{quote.downvotes}}</p></span> <br> 
+         <span class ="owner">Posted on :  {{quote.postDate|date}}</span>
           <div class="del">
             <app-quote-detail [quote]="quote" (isComplete)='deleteQuote($event,1)'></app-quote-detail>
           </div>
-          <div *ngIf="quote.upvotes == highest && quote.upvotes > 0; then highlight else unhighlight">
+        </div>
+         
+          <!-- <div *ngIf="quote.upvotes == highest && quote.upvotes > 0; then highlight else unhighlight">
           </div>
           <ng-template #highlight>
               <p appHighlight> <strong id="author"></strong></p>
@@ -18,16 +25,18 @@
 
           <ng-template #unhighlight>
               <p id="author"></p>
-          </ng-template>
-        </li>
-      </ul>
+          </ng-template> -->
+        
+      <!-- </ul> -->
+      </div>
       
     </div>
     <div class="col-md-2"></div>
   
 </div>
 <div class="row p-5">
-  <div class="form col-md-4 "><h2 class="text-center">Add new quote</h2>
+  <div class="col-md-4"></div>
+  <div class="form col-md-4"><h2 class="text-center">Add new quote</h2>
     <br>
     <form (ngSubmit)="submitQuote()" #quoteForm ="ngForm">
        
